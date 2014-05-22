@@ -1,0 +1,356 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Checkmate.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU 
+BEGIN
+    POPUP "Encodings(&E)"
+    BEGIN
+        POPUP "Base64"
+        BEGIN
+            MENUITEM "Encode",                      ID_BASE64_ENCODE
+            MENUITEM "Decode",                      ID_BASE64_DECODE
+        END
+        POPUP "Ascii85"
+        BEGIN
+            MENUITEM "Encode",                      ID_BASE85_ENCODE
+            MENUITEM "Decode",                      ID_BASE85_DECODE
+        END
+        POPUP "l33t"
+        BEGIN
+            MENUITEM "Encode",                      ID_L33T_ENCODE
+            MENUITEM "Decode",                      ID_L33T_DECODE
+        END
+        POPUP "URL"
+        BEGIN
+            MENUITEM "Encode",                      ID_URL_ENCODE
+            MENUITEM "Decode",                      ID_URL_DECODE
+        END
+        POPUP "Binary"
+        BEGIN
+            MENUITEM "Encode",                      ID_BINARY_ENCODE
+            MENUITEM "Decode",                      ID_BINARY_DECODE
+        END
+        POPUP "Hex"
+        BEGIN
+            MENUITEM "Encode",                      ID_HEX_ENCODE
+            MENUITEM "Decode",                      ID_HEX_DECODE
+        END
+    END
+    POPUP "Hashes(&H)"
+    BEGIN
+        MENUITEM "MD2",                         ID_HASHES_MD2
+        MENUITEM "MD4",                         ID_HASHES_MD4
+        MENUITEM "MD5",                         ID_HASHES_MD5
+        MENUITEM SEPARATOR
+        MENUITEM "SHA-1",                       ID_HASHES_SHA
+        POPUP "SHA-2"
+        BEGIN
+            MENUITEM "224 bits",                    ID_SHA_224BITS32852
+            MENUITEM "256 bits",                    ID_HASHES_SHA256
+            MENUITEM "384 bits",                    ID_SHA_384BITS32853
+            MENUITEM "512 bits",                    ID_HASHES_SHA512
+            MENUITEM "512/224 bits",                ID_SHA_512
+            MENUITEM "512/256 bits",                ID_SHA_513
+        END
+        POPUP "SHA-3"
+        BEGIN
+            MENUITEM "224 bits",                    ID_SHA_224BITS
+            MENUITEM "256 bits",                    ID_SHA_256BITS
+            MENUITEM "384 bits",                    ID_SHA_384BITS
+            MENUITEM "512 bits",                    ID_SHA_512BITS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "RIPEMD-160",                  ID_HASHES_RIPEMD
+        MENUITEM SEPARATOR
+        POPUP "Tiger-3"
+        BEGIN
+            MENUITEM "192 bits",                    ID_TIGER_3_192
+            MENUITEM "160 bits",                    ID_TIGER_3_160
+            MENUITEM "128 bits",                    ID_TIGER_3_128
+        END
+        POPUP "Tiger-4"
+        BEGIN
+            MENUITEM "192 bits",                    ID_TIGER_4_192
+            MENUITEM "160 bits",                    ID_TIGER_4_160
+            MENUITEM "128 bits",                    ID_TIGER_4_128
+        END
+        MENUITEM SEPARATOR
+        POPUP "HAVAL-3"
+        BEGIN
+            MENUITEM "128 bits",                    ID_HAVAL_128BITS
+            MENUITEM "160 bits",                    ID_HAVAL_160BITS
+            MENUITEM "192 bits",                    ID_HAVAL_192BITS
+            MENUITEM "224 bits",                    ID_HAVAL_224BITS
+            MENUITEM "256 bits",                    ID_HAVAL_256BITS
+        END
+        POPUP "HAVAL-4"
+        BEGIN
+            MENUITEM "128 bits",                    ID_HAVAL_128BITS32836
+            MENUITEM "160 bits",                    ID_HAVAL_160BITS32837
+            MENUITEM "192 bits",                    ID_HAVAL_192BITS32838
+            MENUITEM "224 bits",                    ID_HAVAL_224BITS32839
+            MENUITEM "256 bits",                    ID_HAVAL_256BITS32840
+        END
+        POPUP "HAVAL-5"
+        BEGIN
+            MENUITEM "128 bits",                    ID_HAVAL_128BITS32841
+            MENUITEM "160 bits",                    ID_HAVAL_160BITS32842
+            MENUITEM "192 bits",                    ID_HAVAL_192BITS32843
+            MENUITEM "224 bits",                    ID_HAVAL_224BITS32844
+            MENUITEM "256 bits",                    ID_HAVAL_256BITS32845
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Whirlpool",                   ID_HASHES_WHIRLPOOL
+    END
+    POPUP "Ciphers(&C)"
+    BEGIN
+        MENUITEM "Ceasar",                      ID_CIPHERS_CEASARBRUTEFORCE
+        MENUITEM "ROT-13",                      ID_CIPHERS_ROT
+        MENUITEM "Vigenere",                    ID_CIPHERS_VIGENERE, INACTIVE
+        MENUITEM "Affine",                      ID_CIPHERS_AFFINE, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "DES",                         ID_CIPHERS_DES, INACTIVE
+        MENUITEM "AES",                         ID_CIPHERS_AES, INACTIVE
+        MENUITEM "RSA",                         ID_CIPHERS_RSA, INACTIVE
+    END
+    POPUP "Etc(&X)"
+    BEGIN
+        MENUITEM "Lowercase",                   ID_ETC_LOWERCASE
+        MENUITEM "Uppercase",                   ID_ETC_UPPERCASE
+        MENUITEM "Reverse",                     ID_ETC_REVERSE
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About(&A)",                   ID_HELP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit(&X)",                    ID_HELP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "Icon_1.ico"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 158, 83
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Checkmate 1.1.1",IDC_STATIC,39,15,63,8,SS_NOPREFIX
+    LTEXT           "",IDC_STATIC_COPYLEFT,39,27,67,8
+    DEFPUSHBUTTON   "OK",IDOK,107,12,39,28,WS_GROUP
+    ICON            IDI_ICON,IDC_STATIC,14,15,20,20
+    LTEXT           "Please report bugs to:",IDC_STATIC,17,47,77,8
+    LTEXT           "supershop@naver.com",IDC_STATIC,67,59,74,8
+END
+
+IDD_CHECKMATE_DIALOG DIALOGEX 0, 0, 549, 377
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Checkmate 1.1.1"
+MENU IDR_MAIN_MENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_AFTER,6,236,535,134,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_BEFORE,6,21,535,136,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Before",IDC_STATIC,10,8,22,8
+    LTEXT           "After",IDC_STATIC,11,224,18,8
+    PUSHBUTTON      "¤±",IDC_BUTTON_SWITCH,252,197,45,19
+    EDITTEXT        IDC_EDIT_FILEPATH,50,167,430,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Open",IDC_BUTTON_FILEOPEN,488,166,53,16
+    CONTROL         "Use File",IDC_CHECK_FILEHASH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,169,41,10
+    LTEXT           "* Large file may take longer time to process",IDC_STATIC,54,184,140,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,1,0
+ PRODUCTVERSION 1,1,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "My Home"
+            VALUE "FileDescription", "Checkmate"
+            VALUE "FileVersion", "1.1.1.0"
+            VALUE "InternalName", "Checkmate.exe"
+            VALUE "OriginalFilename", "Checkmate.exe"
+            VALUE "ProductName", "Checkmate"
+            VALUE "ProductVersion", "1.1.1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_CHECKMATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 541
+        VERTGUIDE, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 370
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Checkmate..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Checkmate.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
